@@ -2,6 +2,8 @@
 # 配置 nginx 代理
 FROM nginx:latest
 
+RUN  mkdir /etc/ssl/tayrsi
+
 COPY /etc/ssl/tayrsi/tayrsi.cn* /etc/ssl/tayrsi
 
 # 复制 nginx 配置文件到容器目录
