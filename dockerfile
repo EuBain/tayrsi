@@ -4,7 +4,7 @@ FROM nginx:latest
 
 RUN  mkdir /etc/ssl/tayrsi
 
-COPY /etc/ssl/tayrsi/tayrsi.cn* /etc/ssl/tayrsi
+COPY /etc/ssl/tayrsi1/tayrsi.cn* /etc/ssl/tayrsi
 
 # 复制 nginx 配置文件到容器目录
 COPY nginx.conf /etc/nginx/conf.d/default.conf
