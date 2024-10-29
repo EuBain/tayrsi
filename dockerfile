@@ -1,6 +1,6 @@
 
 # 配置 nginx 代理
-FROM nginx:latest
+FROM dockerproxy.cn/nginx:latest
 
 RUN  mkdir /etc/nginx/ssl
 
